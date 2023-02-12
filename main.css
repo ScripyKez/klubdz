@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+* {
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	max-width: 1660px;
+	margin: 0 auto;
+	padding: 0px;
+
+	font-family: 'Open Sans', sans-serif;
+}
+
+ul {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+/*HEADER*/
+
+.header {
+	background-image:
+		linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)),
+		url("https://netology-code.github.io/html-2-diploma/sources/images/banner-bg.jpg");
+	min-height: 450px;
+	color: white;
+	padding-top: 28px;
+}
+
+.container {
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {
+	width: 179px;
+	height: 41px;
+}
+
+.navMenu>ul {
+	font-size: 13px;
+	text-transform: uppercase;
+
+	display: flex;
+	text-indent: 30px;
+}
+
+.title {
+	margin: 115px 240px 0px;
+}
+
+.title>h1 {
+	text-transform: uppercase;
+	font-size: 45px;
+	font-weight: 700;
+	text-align: center;
+}
+
+/*MAIN*/
+
+main>.container {
+	display: flex;
+}
+
+/*POST*/
+.post {
+	display: flex;
+	align-items: start;
+
+	width: 765px;
+	margin-top: 60px;
+
+}
+
+.postInfo {
+	display: flex;
+	flex-direction: column;
+
+	margin-left: 31px;
+}
+
+.subTitle {
+	font-family: 'Open Sans';
+	font-size: 14px;
+	line-height: 40px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #b59f5b;
+}
+
+.subTitle span:nth-child(2n) {
+	margin-left: 10px;
+}
+
+.postTitle {
+	font-family: 'Open Sans';
+	font-size: 20px;
+	line-height: 24px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #0f0d0e;
+}
+
+.postDate {
+	font-family: 'Open Sans';
+	font-size: 12px;
+	line-height: 40px;
+	font-weight: 700;
+}
+
+.postDate:first-child {
+	color: #888888;
+}
+
+.postText {
+	font-family: 'Open Sans';
+	font-size: 15px;
+	line-height: 22px;
+	font-weight: 400;
+	color: #0f0d0e;
+}
+
+/*ASIDE*/
+
+.rPanel {
+
+	margin-left: 135px;
+}
+
+/*MINIPOST*/
+
+.content>p {
+	font-family: 'Open Sans';
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #0f0d0e;
+
+	text-align: center;
+
+	margin-top: 60px;
+}
+
+.line {
+	width: 66px;
+	height: 3px;
+	opacity: 0.4;
+	background-color: #b59f5b;
+
+	margin: 14px auto 29px;
+}
+
+
+.miniPost {
+	display: flex;
+	width: 275px;
+	margin-top: 22px;
+
+	align-items: start;
+}
+
+.miniPostImg {
+	width: 70px;
+	height: 70px;
+}
+
+.miniPostInfo {
+	margin-left: 20px;
+	display: flex;
+	flex-direction: column;
+
+}
+
+.miniPostDate {
+	opacity: 0.54;
+	font-family: 'Open Sans';
+	font-size: 12px;
+	font-weight: 400;
+	color: #000000;
+}
+
+.miniPostText {
+	font-family: 'Open Sans';
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #000000;
+
+	margin-top: 9px;
+}
+
+.inputSearch {
+	display: flex;
+	margin-top: 60px;
+}
+
+input {
+	all: unset;
+	box-sizing: border-box;
+}
+
+.input {
+	font-family: 'Open Sans';
+	font-size: 13px;
+	font-weight: 400;
+	color: #000000;
+
+	width: 222px;
+	height: 48px;
+	background-color: #f4f7f6;
+
+	padding: 18px 0 20px 18px;
+	border: none;
+}
+
+
+
+.search {
+	width: 48px;
+	height: 48px;
+	background-color: #b59f5b;
+
+	margin: 0;
+	display: inline-block;
+	border: none;
+}
+
+.search>img {
+	width: 18px;
+	height: 18px;
+
+}
+
+.inputShare div .input {
+	width: 271px;
+	height: 48px;
+}
+
+.inputShare div .search {
+	width: 271px;
+	height: 48px;
+	margin-top: 16px;
+
+	font-family: 'Open Sans';
+	font-size: 14px;
+	line-height: 40px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #ffffff;
+}
+
+.tags {
+	width: 300px;
+	height: 105px;
+
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.tags div {
+	box-sizing: border-box;
+	padding: 10px 16px 10px 16px;
+	height: 30px;
+	background-color: rgba(253, 249, 242, 0.0);
+	border: 3px solid #eeeeee;
+
+	font-family: 'Open Sans';
+	font-size: 12px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #0f0d0e;
+
+	display: flex;
+	align-items: center;
+
+	margin-right: 5px;
+}
+
+.themes {
+	height: 270px;
+	width: 270px;
+}
+
+.theme {
+	margin-bottom: 7px;
+}
+
+.theme p {
+	font-family: 'Open Sans';
+	font-size: 15px;
+	font-weight: 700;
+	color: #000000;
+	margin-top: 13px;
+
+
+	position: relative;
+}
+
+.theme span {
+	font-family: 'Open Sans';
+	font-size: 11px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #b59f5b;
+	margin-left: 5px;
+
+	position: absolute;
+	top: -5px;
+
+}
+
+
+
+.lineThemes {
+	width: 271px;
+	height: 1px;
+	background-color: #eeeeee;
+
+	margin-top: 15px;
+}
+
+/*FOOTER*/
+
+.footerIcons {
+	margin-top: 65px;
+
+	width: 1170px;
+	height: 83px;
+	background-color: #f4f7f6;
+
+	text-align: center;
+	padding-top: 31px;
+}
+
+.footerIcons>img {
+
+	width: 20px;
+	height: 20px;
+	margin: 0 15px;
+}
+
+.copyright {
+	font-family: 'Open Sans';
+	font-size: 12px;
+	line-height: 40px;
+	font-weight: 700;
+	color: #999999;
+	text-align: center;
+
+	margin: 75px auto 45px;
+}
